@@ -5,7 +5,9 @@ import io
 app = Flask(__name__)
 
 # 🔐 Your real Pdfless API Key
-API_KEY = 'ak_447e4a01-c78e-4f0e-8fbd-48c02d630c36'
+import os
+API_KEY = os.environ.get("PDFLESS_API_KEY")
+
 
 # 📄 Your Pdfless template ID
 TEMPLATE_ID = 'cdf49ddf-47b6-46c0-b600-26e054107683'
